@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TtTqqeFpHBeMEhE2vvwpL0rcYOY3G97OK51EMjcvS4ZZuAvp96Ta55G3tiNjwXZsvCp5yi7A8BOBoION5jkkdnZ/EFPojtj9bhUDXHpUJ1Zyc6Cl7Zv2xNbHuKrBxKOHkdqsgbpAj2fDsygd3/5dOw5P0DD6GeOupL6AT5/pwq5ZwUzACvhR5EtkaeekdydrbvL9fNw9767SNPikB/mK5J4DQJh+3PaHa7a5k5uzEGC2eRxgWKOd10yAK2fU2yUtEIa1lfRrcPhMpb03H6XKaTzn0LcXaDyl1Xs076+/B24lYPTt9Dc4ovO0sHsLqzhSkVKLynWmw2ckyuV3MObqm1o+ZngHYPx88TQP7VlIvv+dUP095GfGiLy9N5lDPDbq6Xo9iMLZeipQQ7OWsoufkPrPuLnjdjxE4Y4o79Xi2v/QLO763kBsywy3mWJFIppIXE7OfxO90LOz9cbnP6ueMCLENM9cz8EJ2FRk8AAIXobSxvtZKyw/uTJyi9jqMwSa0DavggU0yk90kwyFtXkrnQKON5+Kh5u+uIhoAyOt7VhFwtEOhkl6PQtA+twwvp673hxGE5g0us6KT97BWxAVOWlkc+rTJb2QQWS2u8G8T1v0WbGW6dALAf8uyR2c1ltLPWa61UjPPPhiKtKp4H3+hUcHx/Q7muJFAFzbw+XdW54=
+  app: warm-waters-58997
+  on:
+    repo: NicolasMachado/node-restaurants-app-mongoose
+    branch: feature/with-tests
